@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car price prediction</title>
+</head>
+<style type="text/css">
+    title{
+        text-align: right;
+    }
+    lable{
+        width: 150px;
+        display: inline-block;
+        text-align: right;
+        margin: auto;
+        justify-content: center;
+    }
+</style>
+<body style="background-color: rgba(180, 119, 69, 0.651);" >
+    <h1> CAR PRICE PREDICTION </h1>
+    <form method="GET" action="/predict_charges">
+
+        <lable>Symboling:</lable>
+        <input type="text" name ="symboling">
+        </select>
+        
+        <lable>Normalized-Losses:</lable>
+        <input type="text" name ="normalized_losses">
+        
+        <br>
+        <br>
+
+        <lable>Fuel Type:</lable>
+        <select name="fuel_type">
+            <option value="gas">Gas</option>
+            <option value="diesel">Diesel</option>
+        </select>
+
+        <lable>Asperation:</lable>
+        <select name="aspiration">
+            <option value="std">Std</option>
+            <option value="turbo">Turbo</option>
+        </select>
+
+
+        <lable>Number of Doors:</lable>
+        <select name="num_of_doors">
+            <option value="four">Four</option>
+            <option value="two">Two</option>
+        </select>
+
+        <lable>Driving Wheels:</lable>
+        <select name="drive_wheels">
+            <option value="fwd">Fwd</option>
+            <option value="rwd">Rwd</option>
+        </select>
+
+         <br>
+         <br>
+
+        <lable>Engine Location:</lable>
+        <input type="text" name ="engine_location">
+
+
+        <lable>Wheel Base:</lable>
+        <input type="text" name ="wheel_base">
+
+        <br>
+        <br>
+
+        <lable>Lengh:</lable>
+        <input type="text" name ="length">
+
+        
+
+        <lable>Width:</lable>
+        <input type="text" name ="width">
+
+        <br>
+        <br>
+
+        <lable>Height:</lable>
+        <input type="text" name ="height">
+        
+
+        <lable>Curb weight:</lable>
+        <input type="text" name ="curb_weight">
+        <br>
+        <br>
+
+        <lable>Number of cylinder:</lable>
+        <input type="text" name ="num_of_cylinders">
+    
+        <br>
+        <br>
+
+        <lable>Engine Size:</lable>
+        <input type="text" name ="engine_size">
+
+        <br>
+        <br>
+
+        <lable>Bore:</lable>
+        <input type="text" name ="bore">
+
+    
+
+        <lable>Stroke:</lable>
+        <input type="text" name ="stroke">
+        
+        <br>
+        <br>
+
+        <lable>Compression Ratio:</lable>
+        <input type="text" name ="compression_ratio">
+    
+        
+
+        <lable>Horse power:</lable>
+        <input type="text" name ="horsepower">
+        
+        <br>
+        <br>
+
+        <lable>Peak RPM:</lable>
+        <input type="text" name ="peak_rpm">
+        
+        
+
+        <lable>City milage:</lable>
+        <input type="text" name ="city_mpg">
+        
+        <br>
+        <br>
+
+        <lable>Highway milage:</lable>
+        <input type="text" name ="highway_mpg">
+        
+        
+
+        <lable>Body style:</lable>
+        <select name="body_style">
+            <option value="sedan">Sedan</option>
+            <option value="hatchback">Hatcback</option>
+            <option value="wagon">Wagon</option>
+            <option value="hardtop">Hardtop</option>
+            <option value="convertible">Convertible</option>
+        </select>  
+        
+        <br>
+        <br>
+        <lable>Engine Type:</lable>
+        <select name="engine_type">
+            <option value="dohc">Dohc</option>
+            <option value="ohcv">Ohcv</option>
+            <option value="ohc">Ohc</option>
+            <option value="rotor">Rotor</option>
+            <option value="dohcv">Dohcv</option>
+        </select>    
+    
+        
+        <lable>Fuel System:</lable>
+        <select name="fuel_system">
+            <option value="mpfi">Mpfi</option>
+            <option value="2bbl">2bbl</option>
+            <option value="idi">Idi</option>
+            <option value="1bbl">1bbl</option>
+            <option value="mfi">Mfi</option>
+            <option value="spfi">Spfi</option>
+        </select>    
+        <br>
+        <br>
+    
+        <input type="submit" value="SUBMIT">
+    
+    
+
+        </style>
+    
+        <br>
+        <p>Your Car Price is  <b> {{ prediction }} /- Rs.</b> Only </p>
+
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
